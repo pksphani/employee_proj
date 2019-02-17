@@ -1,0 +1,57 @@
+HTml --> Static web component to interact with server
+
+JSP and Servlet are dynamic web components --> 
+
+Servelet Interface
+
+   init
+   service
+   Destory
+   
+   ServletConfig
+   getServletInfo
+   
+
+Generic Servelet  Class which impolemets servelet Interface
+
+it is an abstract method implementation is not provided for service methos
+
+HTTP servelet what wee use
+
+-----
+Servlet Notes
+
+req- we get and set this
+
+resp is for client
+
+---Scopes
+
+hoiw the dat acan store within server
+Request Scope
+Session Scope
+ASpplication Scope
+Page Scope
+
+
+---LOg 4J
+debug
+info 
+error
+
+
+web server 
+application server
+
+---
+listner
+load on start
+
+
+what are JSP implicit objects
+
+What is diff b/w Servlet and Jsp
+Servlet Life Cycle
+JSP Life Cycle
+
+

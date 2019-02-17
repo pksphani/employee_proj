@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>web_demoProj</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+  <servlet-name>phanitestservlet</servlet-name>
+  <servlet-class>
+  com.demo.servelet.PhaniServelet
+  </servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>phanitestservlet </servlet-name>
+  <url-pattern>/myservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>phanigenericservlet</servlet-name>
+  <servlet-class>
+  com.demo.servelet.PhaniGenericServlet
+  </servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>phanigenericservlet </servlet-name>
+  <url-pattern>/genericservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>phanihttpservlet</servlet-name>
+  <servlet-class>
+  com.demo.servelet.PhaniHTTPServlet
+  </servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>phanihttpservlet</servlet-name>
+  <url-pattern>/httpservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>emphttpservlet</servlet-name>
+  <servlet-class>
+  com.demo.servelet.EmployeeServlet
+  </servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>emphttpservlet</servlet-name>
+  <url-pattern>/empservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>getemphttpservlet</servlet-name>
+  <servlet-class>
+  com.demo.servelet.GetEmployeeServlet
+  </servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>getemphttpservlet</servlet-name>
+  <url-pattern>/getempservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>updateemphttpservlet</servlet-name>
+  <servlet-class>
+  com.demo.servelet.UpdateEmployeeServlet
+  </servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>updateemphttpservlet</servlet-name>
+  <url-pattern>/updateempservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>getallemphttpservlet</servlet-name>
+  <servlet-class>
+  com.demo.servelet.GetAllEmployeesServlet
+  </servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>getallemphttpservlet</servlet-name>
+  <url-pattern>/getallempservlet</url-pattern>
+  </servlet-mapping>
+ <!-- <filter>
+    <filter-name>testfilter</filter-name>
+    <filter-class>com.demo.servelet.FilterDemo</filter-class>
+    </filter>
+    <filter-mapping>
+    <filter-name>testfilter</filter-name>
+    <url-pattern>/*</url-pattern>
+    </filter-mapping>
+       
+  -->   <servlet>
+  <servlet-name>loadonstartupservlet</servlet-name>
+  <servlet-class>
+  com.demo.servelet.LoadOnStartupServlet
+  </servlet-class>
+  <!-- <load-on-startup>0</load-on-startup> -->
+  </servlet>
+  
+ <!--  <servlet-mapping>
+  <servlet-name>loadonstartupservlet</servlet-name>
+  <url-pattern>/*</url-pattern>
+  </servlet-mapping> -->
+  
+  <listener>
+  <listener-class>com.demo.servelet.ContextListner</listener-class>
+  </listener>
+  
+  <context-param>
+        <param-name>log4j-config-location</param-name>
+        <param-value>WEB-INF/log4j.properties</param-value>
+    </context-param>
+    
+</web-app>
